@@ -1,0 +1,75 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: job-portal-app
+    working_dir: /app
+    volumes:
+      - ./backend:/app
+    ports:
+      - "8000:8000"
+    environment:
+      - APP_ENV=local
+      - APP_DEBUG=true
+      - DB_CONNECTION=mysql
+      - DB_HOST=mysql
+      - DB_PORT=3306
+      - DB_DATABASE=job_portal
+      - DB_USERNAME=root
+      - DB_PASSWORD=root
+      - CACHE_DRIVER=redis
+      - REDIS_HOST=redis
+    depends_on:
+      - mysql
+      - redis
+    networks:
+      - job-portal-network
+    command: php artisan serve --host=0.0.0.0
+
+  mysql:
+    image: mysql:8.0
+    container_name: job-portal-mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=job_portal
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql-data:/var/lib/mysql
+    networks:
+      - job-portal-network
+
+  redis:
+    image: redis:7-alpine
+    container_name: job-portal-redis
+    ports:
+      - "6379:6379"
+    networks:
+      - job-portal-network
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: job-portal-frontend
+    ports:
+      - "5173:5173"
+    environment:
+      - VITE_API_URL=http://localhost:8000/api
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+    networks:
+      - job-portal-network
+    command: npm run dev
+
+volumes:
+  mysql-data:
+    driver: local
+
+networks:
+  job-portal-network:
+    driver: bridge
