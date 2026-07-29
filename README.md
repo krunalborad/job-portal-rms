@@ -12,8 +12,6 @@ A modern, full-stack application combining LinkedIn Jobs + Indeed + Recruiter Da
 - **Database**: MySQL 8.0+
 - **DevOps**: Docker, Docker Compose, GitHub Actions
 
----
-
 ## ✨ Key Features
 
 ### 👤 For Job Seekers
