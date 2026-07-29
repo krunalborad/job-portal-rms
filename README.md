@@ -35,8 +35,6 @@ A modern, full-stack application combining LinkedIn Jobs + Indeed + Recruiter Da
 - ✅ Platform analytics & insights
 - ✅ Moderation & content management
 
----
-
 ## 🚀 Quick Start
 
 ### Prerequisites
@@ -79,8 +77,6 @@ A modern, full-stack application combining LinkedIn Jobs + Indeed + Recruiter Da
 5. **Access the application**
    - Frontend: `http://localhost:5173`
    - Backend API: `http://localhost:8000/api`
-
----
 
 ## 📚 Documentation
 
