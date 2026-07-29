@@ -82,8 +82,6 @@ A modern, full-stack application combining LinkedIn Jobs + Indeed + Recruiter Da
 
 See [docs/SETUP.md](./docs/SETUP.md) for complete setup guide.
 
----
-
 ## 🛠 Development
 
 ### Frontend Development
@@ -100,8 +98,6 @@ cd backend
 php artisan serve    # Development server
 ```
 
----
-
 ## 🐳 Docker Deployment
 
 ```bash
@@ -115,8 +111,6 @@ docker-compose exec app php artisan migrate
 docker-compose exec app php artisan db:seed
 ```
 
----
-
 ## 🔐 Security
 
 - JWT token authentication
@@ -125,13 +119,3 @@ docker-compose exec app php artisan db:seed
 - Input validation & sanitization
 - SQL injection prevention (Eloquent ORM)
 - Rate limiting
-
----
-
-## 📄 License
-
-MIT License - see LICENSE file for details.
-
----
-
-**Built with ❤️ for the modern recruitment industry**
