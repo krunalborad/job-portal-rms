@@ -1,10 +1,6 @@
-# Job Portal & Recruitment Management System (RMS)
+**HireFlow**
 
-A modern, full-stack application combining LinkedIn Jobs + Indeed + Recruiter Dashboard capabilities.
-
-## 🎯 Overview
-
-**Job Portal & RMS** is a comprehensive recruitment platform built with cutting-edge technologies, designed to streamline job searching, posting, and talent management.
+**HireFlow** is a comprehensive recruitment platform built with cutting-edge technologies, designed to streamline job searching, posting, and talent management.
 
 ### Tech Stack
 - **Frontend**: React 18+ with TypeScript, Vite, Tailwind CSS, Redux Toolkit
