@@ -1,6 +1,7 @@
-**HireFlow**
-
-**HireFlow** is a comprehensive recruitment platform built with cutting-edge technologies, designed to streamline job searching, posting, and talent management.
+HireFlow
+HireFlow is a modern full-stack recruitment and talent management platform built with React, TypeScript, Tailwind CSS, Laravel, PHP, MySQL, and Docker.
+The platform enables job seekers, recruiters, and administrators to streamline the hiring process through intelligent job search, application tracking, and recruitment management.
+HireFlow bridges the gap between employers and candidates by providing a centralized platform for job postings, application management, interview scheduling, and real-time recruitment analytics.
 
 ### Tech Stack
 - **Frontend**: React 18+ with TypeScript, Vite, Tailwind CSS, Redux Toolkit
