@@ -9,7 +9,7 @@
 - **Backend**: Laravel 11 with PHP 8.2+, RESTful API, JWT Authentication
 - **Database**: MySQL 8.0+
 - **DevOps**: Docker, Docker Compose, GitHub Actions
-
+  
 ## ✨ Key Features
 
 ### 👤 For Job Seekers
